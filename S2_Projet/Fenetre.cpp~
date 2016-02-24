@@ -12,5 +12,5 @@ bool Fenetre::EstDemandeeFermeture()
 }
 void Fenetre::Afficher()
 {
-	std::system("clear");
+	std::system("cls");
 }
