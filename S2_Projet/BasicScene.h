@@ -10,6 +10,12 @@ class BasicScene : public Scene
 		virtual void afficher();
 		virtual void input(float frameTime);
 		virtual Scene* update(float frameTime);
+		void clear();
+		void draw();
+		const int HEIGHT = 23;
+		const int WIDTH = 80;
+	private:
+		char** buffer; 
 };
 
 

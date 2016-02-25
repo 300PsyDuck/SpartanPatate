@@ -6,10 +6,12 @@
 BasicScene::BasicScene() : Scene()
 {
 	buffer = new char*[HEIGHT];
-	for(int i = 0; i < HEIGHT; i++)
+	int i = 0;	
+	for(; i < HEIGHT; i++)
 	{
 		buffer[i] = new char[WIDTH];
-		for(int j = 0; j < WIDTH; j++)
+		int j = 0;
+		for(; j < WIDTH; j++)
 			buffer[i][j] = ' ';
 	}
 }
@@ -17,12 +19,6 @@ BasicScene::BasicScene() : Scene()
 void BasicScene::afficher()
 {	
 	clear();
-	buffer[10][38] = 'M';
-	buffer[10][39] = 'A';
-	buffer[10][40] = 'X';
-	buffer[10][41] = 'I';
-	buffer[10][42] = 'M';
-	buffer[10][43] = 'E';
 	draw();
 }
 
@@ -33,6 +29,7 @@ void BasicScene::input(float frameTime)
 
 Scene* BasicScene::update(float frameTime)
 {
+	
 	return this;
 }
 
